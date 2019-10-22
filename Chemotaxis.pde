@@ -38,6 +38,20 @@ class Bacteria
   {
     myX = myX+ (int)(Math.random()*7)-3;
     myY= myY + (int)(Math.random()*7)-3;
+    if (myX > 500) {
+      myX = 500;
+    }
+    if (myX < 0) {
+      myX = 0;
+    }
+    if (myY > 500)
+    {
+      myY = 500;
+    }
+    if (myY < 0)
+    {
+      myY = 0;
+    }
   }
   void show ()
   {
